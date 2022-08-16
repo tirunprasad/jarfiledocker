@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class EmployeeController {
 
-	@GetMapping("/msg")
+	@GetMapping("/")
 	public String send(Model model) {
 		String msg = "I am from controller";
 		model.addAttribute("msg",msg);
